@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\w9051114\\Documents\\GitHub\\First-CPP-UE4-Project\\Upskill\\Source\\Upskill\\Upskill.Build.cs",
-		"C:\\Users\\w9051114\\Documents\\GitHub\\First-CPP-UE4-Project\\Upskill\\Source\\Upskill.Target.cs",
-		"C:\\Users\\w9051114\\Documents\\GitHub\\First-CPP-UE4-Project\\Upskill\\Source\\UpskillEditor.Target.cs"
+		"E:\\Github Repositories\\First-CPP-UE4-Project\\Upskill\\Source\\Upskill\\Upskill.Build.cs",
+		"E:\\Github Repositories\\First-CPP-UE4-Project\\Upskill\\Source\\Upskill.Target.cs",
+		"E:\\Github Repositories\\First-CPP-UE4-Project\\Upskill\\Source\\UpskillEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Upskill.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6B1699F1-D173-47B4-8D1E-1C4263D8FD15}</UniqueIdentifier>
+      <UniqueIdentifier>{7ABCEA14-1E30-4471-9F8D-45D25CFA6791}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Upskill.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A576857F-CE21-4910-B974-B070F880F48B}</UniqueIdentifier>
+      <UniqueIdentifier>{D1EB8E17-15D3-416F-912B-F668A11D7DE1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Upskill">
-      <UniqueIdentifier>{F68C86D8-4633-4F56-8BB7-6C1FAE79EDE1}</UniqueIdentifier>
+      <UniqueIdentifier>{1F7AEF79-F410-4CB5-877B-8FC479D6BFB7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Upskill\Movement.cpp">
       <Filter>Source\Upskill</Filter>

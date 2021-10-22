@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Components/InputComponent.h"
+#include "GameFramework/Actor.h"
+#include "GameFramework/Character.h"
 #include "Movement.generated.h"
 
 
@@ -29,11 +31,16 @@ public:
 private:
 	UInputComponent* InputComponent  = nullptr;
 	APawn* Pawn = nullptr;
+	ACharacter* Character = nullptr;
 
 	FRotator PlayerRotation;
 	FVector PlayerLocation;
 
-	void MoveForward();
-	void MoveRight();
+	void MoveForward(float AxisValue);
+	void MoveRight(float AxisValue);
 
+	void LookUp(float AxisValue);
+	void LookRight(float AxisValue);
+
+	void Jump();
 };

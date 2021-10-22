@@ -2,9 +2,14 @@
 
 #include "Components/InputComponent.h"
 #include "Engine/World.h"
+#include "GameFramework/Actor.h"
+#include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Pawn.h"
+#include "GameFramework/PlayerController.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "Movement.h"
+
 
 
 // Sets default values for this component's properties
@@ -13,8 +18,6 @@ UMovement::UMovement()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
 }
 
 
@@ -24,11 +27,18 @@ void UMovement::BeginPlay()
 	Super::BeginPlay();
 
 	Pawn = GetWorld()->GetFirstPlayerController()->GetPawn();
+	Character = GetWorld()->GetFirstPlayerController()->GetCharacter();
 	
 	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
-	InputComponent->BindAxis("MoveForward", this, &UMovement::MoveForward);
-	InputComponent->BindAxis("MoveRight", this, &UMovement::MoveRight);
 
+	if (InputComponent)
+	{
+		InputComponent->BindAxis("MoveForward", this, &UMovement::MoveForward);
+		InputComponent->BindAxis("MoveRight", this, &UMovement::MoveRight);
+		InputComponent->BindAxis("LookUp", this, &UMovement::LookUp);
+		InputComponent->BindAxis("LookRight", this, &UMovement::LookRight);
+		InputComponent->BindAction("Jump", IE_Pressed, this, &UMovement::Jump);
+	}
 }
 
 
@@ -37,23 +47,34 @@ void UMovement::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	GetWorld()->GetFirstPlayerController()->GetPlayerLocation(PlayerLocation);
-	GetWorld()->GetFirstPlayerController()->GetPlayerRotation(PlayerRotation);
-
+	PlayerLocation = Pawn->GetActorLocation();
+	PlayerRotation = Pawn->GetActorRotation();
 }
 
-void UMovement::MoveForward()
+void UMovement::MoveForward(float AxisValue)
 {
-	
-FVector PlayerRotationYaw = new FVector (0.f, 0.f, PlayerRotation.Z)
-Pawn->AddMovementInput(PlayerRotationYaw, InputComponent->BindAxis("MoveForward"), false);
-
+	FRotator PlayerRotationYawOnly = FRotator(0.f, PlayerRotation.Yaw, 0.f);
+	Pawn->AddMovementInput(UKismetMathLibrary::GetForwardVector(PlayerRotationYawOnly), AxisValue, false);
 }
 
-void UMovement::MoveRight()
+void UMovement::MoveRight(float AxisValue)
 {
+	FRotator PlayerRotationYawOnly = FRotator(0.f, PlayerRotation.Yaw, 0.f);
+	Pawn->AddMovementInput(UKismetMathLibrary::GetRightVector(PlayerRotationYawOnly), AxisValue, false);
+}
 
+void UMovement::LookUp(float AxisValue)
+{
+	Pawn->AddControllerPitchInput(AxisValue*-1);
+}
 
+void UMovement::LookRight(float AxisValue)
+{
+	Pawn->AddControllerYawInput(AxisValue);
+}
 
+void UMovement::Jump()
+{
+	Character->Jump();
 }
 
