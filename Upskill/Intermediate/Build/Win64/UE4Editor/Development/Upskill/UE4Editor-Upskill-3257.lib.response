@@ -1,0 +1,20 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Upskill-3257.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UpskillEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyCharacter.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyPlayerController.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Upskill.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UpskillGameModeBase.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyCharacter.gen.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyPlayerController.gen.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Upskill.init.gen.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UpskillGameModeBase.gen.cpp.obj"
+"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Default.rc2.res"
+/OUT:"E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-3257.lib"
+/INCLUDE:IMPLEMENT_MODULE_Upskill

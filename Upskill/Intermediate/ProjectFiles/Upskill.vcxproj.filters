@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Upskill.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{266CF351-2407-481A-922D-5E23719AC8DB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Upskill.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UpskillEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{EE6CDADE-EB89-45A5-A8FF-555A4E482676}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Upskill">
+      <UniqueIdentifier>{7DFF32B7-CA1C-4B20-9EC4-BF201DAC04B9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Upskill\MyCharacter.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\MyCharacter.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Upskill\MyPlayerController.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\MyPlayerController.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Upskill\Upskill.Build.cs">
+      <Filter>Source\Upskill</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Upskill\Upskill.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\Upskill.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Upskill\UpskillGameModeBase.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\UpskillGameModeBase.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\Unreal Projects\\Upskill\\Source\\Upskill\\Upskill.Build.cs",
+		"E:\\Unreal Projects\\Upskill\\Source\\Upskill.Target.cs",
+		"E:\\Unreal Projects\\Upskill\\Source\\UpskillEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.2"
+}

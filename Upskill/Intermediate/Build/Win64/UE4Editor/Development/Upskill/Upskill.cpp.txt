@@ -1,0 +1,2 @@
+E:\Unreal Projects\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Definitions.Upskill.h
+e:\unreal projects\upskill\source\upskill\Upskill.h

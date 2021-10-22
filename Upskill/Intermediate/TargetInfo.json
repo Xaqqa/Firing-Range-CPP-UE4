@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Upskill",
+			"Path": "E:\\Unreal Projects\\Upskill\\Source\\Upskill.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UpskillEditor",
+			"Path": "E:\\Unreal Projects\\Upskill\\Source\\UpskillEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
