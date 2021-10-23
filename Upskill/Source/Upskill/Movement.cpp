@@ -1,6 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Camera/CameraComponent.h"
+#include "Camera/PlayerCameraManager.h"
+#include "Components/ArrowComponent.h"
+#include "Components/ChildActorComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/PrimitiveComponent.h"
+#include "Containers/Array.h"
+#include "Engine/StaticMesh.h"
 #include "Engine/World.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
@@ -9,8 +16,6 @@
 #include "GameFramework/PlayerController.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Movement.h"
-
-
 
 // Sets default values for this component's properties
 UMovement::UMovement()
@@ -28,6 +33,17 @@ void UMovement::BeginPlay()
 
 	Pawn = GetWorld()->GetFirstPlayerController()->GetPawn();
 	Character = GetWorld()->GetFirstPlayerController()->GetCharacter();
+	Firearm = Pawn->FindComponentByClass<UChildActorComponent>();
+
+	
+
+	TArray<UArrowComponent> ArrowComponents;
+
+	//ArrowComponents = Pawn->GetComponents**<UArrowComponent>**(ArrowComponents);
+	//AdsAnchor = ArrowComponents[0];
+
+	//HipAnchor = ArrowComponents[0];
+
 	
 	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
 

@@ -2,8 +2,11 @@
 
 #pragma once
 
+#include "Camera/CameraComponent.h"
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Components/ArrowComponent.h"
+#include "Components/ChildActorComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
@@ -32,6 +35,9 @@ private:
 	UInputComponent* InputComponent  = nullptr;
 	APawn* Pawn = nullptr;
 	ACharacter* Character = nullptr;
+	UChildActorComponent* Firearm = nullptr;
+	UArrowComponent* AdsAnchor = nullptr;
+	UArrowComponent* HipAnchor = nullptr;
 
 	FRotator PlayerRotation;
 	FVector PlayerLocation;
