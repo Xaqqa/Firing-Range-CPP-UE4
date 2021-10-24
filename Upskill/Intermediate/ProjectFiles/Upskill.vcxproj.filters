@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Upskill.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{7ABCEA14-1E30-4471-9F8D-45D25CFA6791}</UniqueIdentifier>
+      <UniqueIdentifier>{A8434AEF-8730-42F1-A6DC-FE1CFE866EBC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Upskill.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{D1EB8E17-15D3-416F-912B-F668A11D7DE1}</UniqueIdentifier>
+      <UniqueIdentifier>{16B4BE38-F5C6-45AA-85F7-B26A559E6C14}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,8 +27,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Upskill">
-      <UniqueIdentifier>{1F7AEF79-F410-4CB5-877B-8FC479D6BFB7}</UniqueIdentifier>
+      <UniqueIdentifier>{DC1053AF-0BA8-47FD-BDC9-8FE345E8B9F2}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Upskill\Bullet.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\Bullet.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Upskill\Gun.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\Gun.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Upskill\Movement.cpp">
       <Filter>Source\Upskill</Filter>
     </ClCompile>

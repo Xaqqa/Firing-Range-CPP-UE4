@@ -1,37 +1,13 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\Github Repositories\First-CPP-UE4-Project).
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0014.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0016.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0032.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0042.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0051.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0053.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0054.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0055.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0064.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0066.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0068.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0078.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Binaries\Win64\UE4Editor-Upskill-0079.dll
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0014.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0016.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0032.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0042.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0051.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0053.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0054.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0055.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0064.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0066.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0068.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0078.lib
-  Deleted hot-reload file: E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0079.lib
   Building UpskillEditor...
   Using Visual Studio 2017 14.16.27045 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 3 actions with 8 processes...
-    [1/3] UE4Editor-Upskill.lib
-       Creating library E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill.lib and object E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill.exp
-    [2/3] UE4Editor-Upskill.dll
-       Creating library E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill.suppressed.lib and object E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill.suppressed.exp
-    [3/3] UpskillEditor.target
-  Total time in Parallel executor: 3.09 seconds
-  Total execution time: 4.19 seconds
+  Building 4 actions with 8 processes...
+    [1/4] Gun.cpp
+E:\Github Repositories\First-CPP-UE4-Project\Upskill\Source\Upskill\Gun.cpp(97): error C2664: 'T *UWorld::SpawnActor<AActor>(UClass *,const FTransform &,const FActorSpawnParameters &)': cannot convert argument 1 from 'AActor *' to 'const FVector &'
+            with
+            [
+                T=AActor
+            ]
+    E:\Github Repositories\First-CPP-UE4-Project\Upskill\Source\Upskill\Gun.cpp(97): note: Reason: cannot convert from 'AActor *' to 'const FVector'
+    E:\Github Repositories\First-CPP-UE4-Project\Upskill\Source\Upskill\Gun.cpp(97): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.26\Engine\Build\BatchFiles\Build.bat" UpskillEditor Win64 Development -Project="E:\Github Repositories\First-CPP-UE4-Project\Upskill\Upskill.uproject" -WaitMutex -FromMsBuild" exited with code 6.

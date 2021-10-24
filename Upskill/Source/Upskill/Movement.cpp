@@ -36,16 +36,12 @@ void UMovement::BeginPlay()
 {
 	Super::BeginPlay();
 
-
-
 	Pawn = GetWorld()->GetFirstPlayerController()->GetPawn();
 	Character = GetWorld()->GetFirstPlayerController()->GetCharacter();
 	Firearm = Pawn->FindComponentByClass<UChildActorComponent>();
 	Camera = Pawn->FindComponentByClass<UCameraComponent>();
 	CameraManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
 	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
-
-
 	
 	HipAnchor->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
 	HipAnchor->SetRelativeLocation(FVector(35.f, 20.f, -31.f));
@@ -54,7 +50,6 @@ void UMovement::BeginPlay()
 	AdsAnchor->SetRelativeLocation(FVector(35.f, 0.f, -16.f));
 
 	Firearm->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
-
 
 	if (InputComponent)
 	{

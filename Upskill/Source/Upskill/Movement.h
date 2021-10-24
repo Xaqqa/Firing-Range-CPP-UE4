@@ -22,6 +22,7 @@ public:
 	// Sets default values for this component's properties
 	UMovement();
 
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -29,10 +30,10 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
+	
 		
 private:
-	UInputComponent* InputComponent  = nullptr;
+	UInputComponent* InputComponent = nullptr;
 	APawn* Pawn = nullptr;
 	ACharacter* Character = nullptr;
 	UChildActorComponent* Firearm = nullptr;
