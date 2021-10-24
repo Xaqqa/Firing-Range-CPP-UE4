@@ -1,16 +1,16 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\Github Repositories\First-CPP-UE4-Project).
   Parsing headers for UpskillEditor
     Running UnrealHeaderTool "E:\Github Repositories\First-CPP-UE4-Project\Upskill\Upskill.uproject" "E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UpskillEditor\Development\UpskillEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\AGEOF\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for UpskillEditor in 4.8888589 seconds
+  Reflection code generated for UpskillEditor in 5.8419271 seconds
   Building UpskillEditor...
   Using Visual Studio 2017 14.16.27045 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 5 actions with 8 processes...
     [1/5] Movement.gen.cpp
     [2/5] Movement.cpp
-    [3/5] UE4Editor-Upskill-0032.lib
-       Creating library E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0032.lib and object E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0032.exp
-    [4/5] UE4Editor-Upskill-0032.dll
-       Creating library E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0032.suppressed.lib and object E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0032.suppressed.exp
+    [3/5] UE4Editor-Upskill-0079.lib
+       Creating library E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0079.lib and object E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0079.exp
+    [4/5] UE4Editor-Upskill-0079.dll
+       Creating library E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0079.suppressed.lib and object E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-0079.suppressed.exp
     [5/5] UpskillEditor.target
-  Total time in Parallel executor: 4.53 seconds
-  Total execution time: 10.60 seconds
+  Total time in Parallel executor: 6.69 seconds
+  Total execution time: 14.04 seconds

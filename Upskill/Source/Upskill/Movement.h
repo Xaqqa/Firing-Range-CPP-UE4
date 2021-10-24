@@ -36,8 +36,7 @@ private:
 	APawn* Pawn = nullptr;
 	ACharacter* Character = nullptr;
 	UChildActorComponent* Firearm = nullptr;
-	UArrowComponent* AdsAnchor = nullptr;
-	UArrowComponent* HipAnchor = nullptr;
+	APlayerCameraManager* CameraManager = nullptr;
 
 	FRotator PlayerRotation;
 	FVector PlayerLocation;
@@ -49,4 +48,17 @@ private:
 	void LookRight(float AxisValue);
 
 	void Jump();
+
+	void AimIn(float DeltaTime);
+	void AimOut(float DeltaTime);
+	void execAimIn();
+	void execAimOut();
+
+	UArrowComponent* AdsAnchor;
+	UArrowComponent* HipAnchor;
+
+	UPROPERTY(EditAnywhere) float AimingSpeedInSeconds = 0.1f;
+	FVector AimingStartLocation;
+	bool bAiming;
+	float AimingTimeElapsed = AimingSpeedInSeconds;
 };

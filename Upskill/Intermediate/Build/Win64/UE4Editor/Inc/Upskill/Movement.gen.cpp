@@ -31,6 +31,11 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AimingSpeedInSeconds_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AimingSpeedInSeconds;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +51,16 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 		{ "ModuleRelativePath", "Movement.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds = { "AimingSpeedInSeconds", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovement, AimingSpeedInSeconds), METADATA_PARAMS(Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMovement_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMovement_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMovement>::IsAbstract,
 	};
@@ -55,11 +70,11 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_UMovement_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UMovement_Statics::PropPointers),
 		0,
 		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UMovement_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMovement_Statics::Class_MetaDataParams))
@@ -73,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMovement, 1710842549);
+	IMPLEMENT_CLASS(UMovement, 2307045055);
 	template<> UPSKILL_API UClass* StaticClass<UMovement>()
 	{
 		return UMovement::StaticClass();
