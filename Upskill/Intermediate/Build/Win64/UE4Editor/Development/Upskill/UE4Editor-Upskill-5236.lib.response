@@ -1,0 +1,22 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Upskill-5236.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UpskillEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Movement.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyCharacter.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyPlayerController.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Upskill.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UpskillGameModeBase.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Movement.gen.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyCharacter.gen.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\MyPlayerController.gen.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Upskill.init.gen.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UpskillGameModeBase.gen.cpp.obj"
+"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Default.rc2.res"
+/OUT:"E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\UE4Editor-Upskill-5236.lib"
+/INCLUDE:IMPLEMENT_MODULE_Upskill

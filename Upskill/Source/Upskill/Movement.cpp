@@ -7,6 +7,7 @@
 #include "Components/InputComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "Containers/Array.h"
+#include "Engine/EngineTypes.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
 #include "GameFramework/Actor.h"
@@ -35,15 +36,25 @@ void UMovement::BeginPlay()
 {
 	Super::BeginPlay();
 
-	HipAnchor->SetRelativeLocation(FVector(35.f, 20.f, 22.f));
-	AdsAnchor->SetRelativeLocation(FVector(35.f, 0.f, 48.f));
+
 
 	Pawn = GetWorld()->GetFirstPlayerController()->GetPawn();
 	Character = GetWorld()->GetFirstPlayerController()->GetCharacter();
 	Firearm = Pawn->FindComponentByClass<UChildActorComponent>();
+	Camera = Pawn->FindComponentByClass<UCameraComponent>();
 	CameraManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
-
 	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+
+
+	
+	HipAnchor->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
+	HipAnchor->SetRelativeLocation(FVector(35.f, 20.f, -31.f));
+	
+	AdsAnchor->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
+	AdsAnchor->SetRelativeLocation(FVector(35.f, 0.f, -16.f));
+
+	Firearm->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
+
 
 	if (InputComponent)
 	{
@@ -55,7 +66,7 @@ void UMovement::BeginPlay()
 		InputComponent->BindAction("Aim", IE_Pressed, this, &UMovement::execAimIn);
 		InputComponent->BindAction("Aim", IE_Released, this, &UMovement::execAimOut);
 	}
-	//Firearm->SetRelativeLocation(AdsAnchor->GetRelativeLocation());
+	Firearm->SetRelativeLocation(HipAnchor->GetRelativeLocation());
 }
 
 // Called every frame
@@ -66,10 +77,6 @@ void UMovement::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	PlayerLocation = GetOwner()->GetActorLocation();
 	PlayerRotation = GetOwner()->GetActorRotation();
 	
-	FRotator FirearmRotator = FRotator(CameraManager->GetCameraRotation().Pitch, 0.f, 0.f);
-	//Firearm->SetRelativeRotation(FirearmRotator);
-
-
 	if (bAiming)
 	{
 		if(AimingTimeElapsed <= AimingSpeedInSeconds)
@@ -101,7 +108,7 @@ void UMovement::MoveRight(float AxisValue)
 
 void UMovement::LookUp(float AxisValue)
 {
-	Pawn->AddControllerPitchInput(AxisValue*-1);
+	Camera->SetRelativeRotation(FRotator(FMath::Clamp(Camera->GetRelativeRotation().Pitch + AxisValue, -80.f, 80.f), Camera->GetRelativeRotation().Roll, Camera->GetRelativeRotation().Yaw));
 }
 
 void UMovement::LookRight(float AxisValue)

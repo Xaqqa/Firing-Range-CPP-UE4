@@ -37,6 +37,7 @@ private:
 	ACharacter* Character = nullptr;
 	UChildActorComponent* Firearm = nullptr;
 	APlayerCameraManager* CameraManager = nullptr;
+	UCameraComponent* Camera = nullptr;
 
 	FRotator PlayerRotation;
 	FVector PlayerLocation;
