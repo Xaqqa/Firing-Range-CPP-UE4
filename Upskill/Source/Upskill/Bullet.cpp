@@ -27,7 +27,6 @@ void UBullet::BeginPlay()
 
 	UStaticMeshComponent* BulletMesh = GetOwner()->FindComponentByClass<UStaticMeshComponent>();
 	BulletMesh->AddImpulse(UKismetMathLibrary::GetForwardVector(BulletMesh->GetRelativeRotation())*BulletInitialVelocity);
-	UE_LOG(LogTemp, Warning, TEXT("BULLET FIRED"));
 }
 
 
