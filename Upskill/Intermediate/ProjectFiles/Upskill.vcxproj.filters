@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Upskill.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A8434AEF-8730-42F1-A6DC-FE1CFE866EBC}</UniqueIdentifier>
+      <UniqueIdentifier>{0B8AECAE-623F-4A51-AAE3-3289A089C320}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Upskill.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{16B4BE38-F5C6-45AA-85F7-B26A559E6C14}</UniqueIdentifier>
+      <UniqueIdentifier>{3BEC20E9-7DC4-4359-8651-2022DD39E056}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Upskill">
-      <UniqueIdentifier>{DC1053AF-0BA8-47FD-BDC9-8FE345E8B9F2}</UniqueIdentifier>
+      <UniqueIdentifier>{073D7015-361E-4F49-A138-A08F6CC7F1BC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Upskill\Bullet.cpp">
       <Filter>Source\Upskill</Filter>
@@ -47,6 +47,12 @@
     <ClInclude Include="..\..\Source\Upskill\Movement.h">
       <Filter>Source\Upskill</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Upskill\MovingTarget.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\MovingTarget.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Upskill\MyCharacter.cpp">
       <Filter>Source\Upskill</Filter>
     </ClCompile>
@@ -57,6 +63,12 @@
       <Filter>Source\Upskill</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Upskill\MyPlayerController.h">
+      <Filter>Source\Upskill</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Upskill\Target.cpp">
+      <Filter>Source\Upskill</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Upskill\Target.h">
       <Filter>Source\Upskill</Filter>
     </ClInclude>
     <None Include="..\..\Source\Upskill\Upskill.Build.cs">

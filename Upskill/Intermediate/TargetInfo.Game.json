@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Upskill",
+			"Path": "E:\\Github Repositories\\First-CPP-UE4-Project\\Upskill\\Source\\Upskill.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UpskillEditor",
+			"Path": "E:\\Github Repositories\\First-CPP-UE4-Project\\Upskill\\Source\\UpskillEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

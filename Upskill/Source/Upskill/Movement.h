@@ -30,7 +30,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-	
+
+	void AddPoints(int32 PointsToAdd);
 		
 private:
 	UInputComponent* InputComponent = nullptr;
@@ -56,6 +57,8 @@ private:
 	void execAimIn();
 	void execAimOut();
 
+
+
 	UArrowComponent* AdsAnchor;
 	UArrowComponent* HipAnchor;
 
@@ -63,4 +66,5 @@ private:
 	FVector AimingStartLocation;
 	bool bAiming;
 	float AimingTimeElapsed = AimingSpeedInSeconds;
+	int32 Points = 0;
 };

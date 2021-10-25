@@ -144,3 +144,8 @@ void UMovement::AimOut(float DeltaTime)
 	AimingTimeElapsed += DeltaTime;
 }
 
+void UMovement::AddPoints(int32 PointsToAdd)
+{
+	Points += PointsToAdd;
+}
+
