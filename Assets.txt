@@ -2,3 +2,6 @@ Third Party Assets
 UE4 Project Starter Assets
 https://www.cgtrader.com/free-3d-models/military/gun/45-acp-smith-and-wesson-gun-model
 https://sketchfab.com/3d-models/simple-shooting-range-target-b3d3895128e74c76a1293daee2e17ab2
+
+Tutorials:
+https://nerivec.github.io/old-ue4-wiki/pages/umg-referencing-umg-widgets-in-code.html

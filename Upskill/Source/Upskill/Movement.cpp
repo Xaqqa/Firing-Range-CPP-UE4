@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Blueprint/UserWidget.h"
 #include "Camera/CameraComponent.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Components/ArrowComponent.h"
@@ -18,6 +19,8 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Math/UnrealMathUtility.h"
 #include "Movement.h"
+
+#include <functional>
 
 // Sets default values for this component's properties
 UMovement::UMovement()
@@ -62,6 +65,16 @@ void UMovement::BeginPlay()
 		InputComponent->BindAction("Aim", IE_Released, this, &UMovement::execAimOut);
 	}
 	Firearm->SetRelativeLocation(HipAnchor->GetRelativeLocation());
+
+	if (HUD)
+	{
+		MainHUD = CreateWidget<UUserWidget>(GetWorld()->GetFirstPlayerController(), HUD);
+		if (MainHUD)
+		{
+			MainHUD->AddToViewport();
+			UE_LOG(LogTemp, Warning, TEXT("HUD ADDED TO VIEWPORT"));
+		}
+	}
 }
 
 // Called every frame
@@ -86,7 +99,6 @@ void UMovement::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 			AimOut(DeltaTime);
 		}
 	}
-
 }
 
 void UMovement::MoveForward(float AxisValue)

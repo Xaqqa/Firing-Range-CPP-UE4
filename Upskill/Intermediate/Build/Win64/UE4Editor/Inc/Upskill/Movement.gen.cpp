@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 	UPSKILL_API UClass* Z_Construct_UClass_UMovement();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_Upskill();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
 	void UMovement::StaticRegisterNativesUMovement()
 	{
@@ -31,6 +33,14 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Points_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Points;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HUD_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_HUD;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AimingSpeedInSeconds_MetaData[];
 #endif
@@ -52,6 +62,21 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovement_Statics::NewProp_Points_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UMovement_Statics::NewProp_Points = { "Points", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovement, Points), METADATA_PARAMS(Z_Construct_UClass_UMovement_Statics::NewProp_Points_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovement_Statics::NewProp_Points_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovement_Statics::NewProp_HUD_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UMovement_Statics::NewProp_HUD = { "HUD", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovement, HUD), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UMovement_Statics::NewProp_HUD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovement_Statics::NewProp_HUD_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Movement.h" },
@@ -59,6 +84,8 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds = { "AimingSpeedInSeconds", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovement, AimingSpeedInSeconds), METADATA_PARAMS(Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMovement_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMovement_Statics::NewProp_Points,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMovement_Statics::NewProp_HUD,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMovement_Statics::NewProp_AimingSpeedInSeconds,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMovement_Statics::StaticCppClassTypeInfo = {
@@ -88,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeMovement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMovement, 2307045055);
+	IMPLEMENT_CLASS(UMovement, 4230935214);
 	template<> UPSKILL_API UClass* StaticClass<UMovement>()
 	{
 		return UMovement::StaticClass();

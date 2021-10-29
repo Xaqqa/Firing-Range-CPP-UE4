@@ -32,6 +32,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	void AddPoints(int32 PointsToAdd);
+	UPROPERTY(BlueprintReadOnly) int32 Points = 0;
 		
 private:
 	UInputComponent* InputComponent = nullptr;
@@ -40,6 +41,12 @@ private:
 	UChildActorComponent* Firearm = nullptr;
 	APlayerCameraManager* CameraManager = nullptr;
 	UCameraComponent* Camera = nullptr;
+
+
+
+	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = "true")) TSubclassOf<class UUserWidget> HUD;
+	UUserWidget* MainHUD = nullptr;
+	class UTextBlock* ItemTitle = nullptr;
 
 	FRotator PlayerRotation;
 	FVector PlayerLocation;
@@ -58,13 +65,13 @@ private:
 	void execAimOut();
 
 
-
 	UArrowComponent* AdsAnchor;
 	UArrowComponent* HipAnchor;
 
 	UPROPERTY(EditAnywhere) float AimingSpeedInSeconds = 0.1f;
+
 	FVector AimingStartLocation;
 	bool bAiming;
 	float AimingTimeElapsed = AimingSpeedInSeconds;
-	int32 Points = 0;
+
 };

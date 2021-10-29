@@ -59,6 +59,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UMovement); \
 
 
 #define Upskill_Source_Upskill_Movement_h_19_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__HUD() { return STRUCT_OFFSET(UMovement, HUD); } \
 	FORCEINLINE static uint32 __PPO__AimingSpeedInSeconds() { return STRUCT_OFFSET(UMovement, AimingSpeedInSeconds); }
 
 

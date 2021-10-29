@@ -73,7 +73,7 @@ void UTarget::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AA
 	{
 		
 		
-		//Player->AddPoints(100);
+		Player->AddPoints(100);
 		TargetLastShot = GetWorld()->GetTimeSeconds();
 		ReactivationTime = FMath::FRandRange(3.f, 6.f);
 		AnimationTimeElapsed = 0.f;
