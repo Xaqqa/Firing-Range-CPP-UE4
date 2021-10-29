@@ -59,8 +59,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UMovingTarget); \
 
 
 #define Upskill_Source_Upskill_MovingTarget_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__AnchorOne() { return STRUCT_OFFSET(UMovingTarget, AnchorOne); } \
-	FORCEINLINE static uint32 __PPO__AnchorTwo() { return STRUCT_OFFSET(UMovingTarget, AnchorTwo); } \
 	FORCEINLINE static uint32 __PPO__AnimationTimeInSeconds() { return STRUCT_OFFSET(UMovingTarget, AnimationTimeInSeconds); }
 
 

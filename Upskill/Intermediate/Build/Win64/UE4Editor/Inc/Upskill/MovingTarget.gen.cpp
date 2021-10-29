@@ -66,14 +66,14 @@ void EmptyLinkFunctionForGeneratedCodeMovingTarget() {}
 		{ "ModuleRelativePath", "MovingTarget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorOne = { "AnchorOne", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovingTarget, AnchorOne), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorOne_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorOne_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorOne = { "AnchorOne", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovingTarget, AnchorOne), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorOne_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorOne_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorTwo_MetaData[] = {
 		{ "Category", "MovingTarget" },
 		{ "ModuleRelativePath", "MovingTarget.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorTwo = { "AnchorTwo", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovingTarget, AnchorTwo), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorTwo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorTwo_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorTwo = { "AnchorTwo", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovingTarget, AnchorTwo), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorTwo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnchorTwo_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovingTarget_Statics::NewProp_AnimationTimeInSeconds_MetaData[] = {
 		{ "Category", "MovingTarget" },
@@ -113,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeMovingTarget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMovingTarget, 4224217752);
+	IMPLEMENT_CLASS(UMovingTarget, 2502583600);
 	template<> UPSKILL_API UClass* StaticClass<UMovingTarget>()
 	{
 		return UMovingTarget::StaticClass();

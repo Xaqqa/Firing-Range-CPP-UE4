@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeUpskill_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF4F77A3C,
+				0x7FE0A9A0,
 				0x00F65CAE,
 				METADATA_PARAMS(nullptr, 0)
 			};

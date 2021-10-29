@@ -25,12 +25,14 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FVector AnchorOne;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FVector AnchorTwo;
+
 private:
 
 	UChildActorComponent* Target = nullptr;
 
-	UPROPERTY(EditAnywhere) FVector AnchorOne;
-	UPROPERTY(EditAnywhere) FVector AnchorTwo;
+
 
 	void ToAnchorOne(float DeltaTime);
 	void ToAnchorTwo(float DeltaTime);

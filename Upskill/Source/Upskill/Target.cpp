@@ -26,7 +26,7 @@ void UTarget::BeginPlay()
 {
 	Super::BeginPlay();
 
-	Player = Cast<UMovement>(GetWorld()->GetFirstPlayerController()->GetPawn()->GetOwner()->FindComponentByClass<UMovement>());
+	Player = Cast<UMovement>(GetWorld()->GetFirstPlayerController()->GetPawn()->FindComponentByClass<UMovement>());
 	SphereCollision = GetOwner()->FindComponentByClass<USphereComponent>();
 	TargetAnchor = GetOwner()->FindComponentByClass<UArrowComponent>();
 
