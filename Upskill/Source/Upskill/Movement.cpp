@@ -161,3 +161,15 @@ void UMovement::AddPoints(int32 PointsToAdd)
 	Points += PointsToAdd;
 }
 
+void UMovement::SetAmmo(int32 AmmoToChange, bool RemoveAmmo)
+{
+	if(RemoveAmmo)
+	{
+		Ammo -= AmmoToChange;
+	}
+	else
+	{
+		Ammo += AmmoToChange;
+	}
+}
+

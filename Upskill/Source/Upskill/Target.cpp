@@ -83,14 +83,12 @@ void UTarget::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AA
 	}
 }
 
-
 void UTarget::execActivateTarget()
 {
 	AnimationTimeElapsed = 0.f;
 	bShot = false;
 	bActive = true;
 }
-
 
 void UTarget::ActivateTarget(float DeltaTime)
 {

@@ -14,6 +14,7 @@
 #include "Particles/ParticleSystem.h"
 #include "UObject/ConstructorHelpers.h"
 #include "UObject/UObjectGlobals.h"
+#include "Movement.h"
 #include "Gun.h"
 
 // Sets default values for this component's properties
@@ -44,7 +45,7 @@ void UGun::BeginPlay()
 
 	SlideEndAnchor->SetRelativeLocation(FVector(0.f, 18.f, 0.f));
 
-
+	Player = Cast<UMovement>(GetWorld()->GetFirstPlayerController()->GetPawn()->FindComponentByClass<UMovement>());
 	InputComponent = GetWorld()->GetFirstPlayerController()->GetPawn()->FindComponentByClass<UInputComponent>();
 	Gun = GetOwner()->FindComponentByClass<UStaticMeshComponent>();
 	Camera = GetWorld()->GetFirstPlayerController()->GetPawn()->FindComponentByClass<UCameraComponent>();
@@ -59,9 +60,9 @@ void UGun::BeginPlay()
 	if(InputComponent)
 	{
 		InputComponent->BindAction("Shoot", IE_Pressed, this, &UGun::Shoot);
+		InputComponent->BindAction("Reload", IE_Pressed, this, &UGun::Reload);
 	}
 }
-
 
 // Called every frame
 void UGun::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -84,17 +85,62 @@ void UGun::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTi
 			bShooting = false;
 		}
 	}
+
+	if(bReloading)
+	{
+	
+		if (ReloadTimeElapsed <= ReloadTimeInSeconds)
+		{
+			ReloadAnimation(DeltaTime);
+		}
+
+		if (ReloadTimeElapsed >= ReloadTimeInSeconds)
+		{
+			bReloading = false;
+			int32 AmmoCount = Player->Ammo;
+			int32 AmmoToReplenish = 7 - AmmoCount;
+			Player->SetAmmo(AmmoToReplenish, false);
+		}
+	}
 }
 
 
 void UGun::Shoot()
 {
-	bShooting = true;
-	SlideAnimationTimeElapsed = 0.f;
-	GunshotParticles->Activate(true);
-	
-	GetWorld()->SpawnActor<AActor>(Bullet, BulletSpawnAnchor->GetComponentLocation(), BulletSpawnAnchor->GetComponentRotation());
+	if (!bReloading)
+	{
+		int32 AmmoCount = Player->Ammo;
+		if (AmmoCount != 0)
+		{
+			//Has Ammo
+			bShooting = true;
+			SlideAnimationTimeElapsed = 0.f;
+			GunshotParticles->Activate(true);
+			Player->SetAmmo(1, true);
+			GetWorld()->SpawnActor<AActor>(Bullet, BulletSpawnAnchor->GetComponentLocation(), BulletSpawnAnchor->GetComponentRotation());
+		}
+		else
+		{
+			//No Ammo
+			Reload();
+		}
+	}
 }
+
+void UGun::Reload()
+{
+	int32 AmmoCount = Player->Ammo;
+	if (AmmoCount == 7)
+	{
+		//Cannot Reload
+	}
+	else
+	{
+		ReloadTimeElapsed = 0;
+		bReloading = true;
+	}
+}
+
 
 void UGun::SlideAnimation(float DeltaTime)
 {
@@ -108,5 +154,10 @@ void UGun::SlideAnimationEnd(float DeltaTime)
 	FVector SlideLocation = FMath::Lerp(SlideEndAnchor->GetRelativeLocation(), FVector(0.f, 0.f, 0.f), (SlideAnimationTimeElapsed / 2.f) / SlideAnimationInSeconds);
 	GunSlide->SetRelativeLocation(SlideLocation);
 	SlideAnimationTimeElapsed += DeltaTime;
+}
+
+void UGun::ReloadAnimation(float DeltaTime)
+{
+	ReloadTimeElapsed += DeltaTime;
 }
 

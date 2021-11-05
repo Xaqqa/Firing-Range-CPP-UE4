@@ -10,7 +10,15 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Particles/Emitter.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Source\Upskill\Gun.h
+C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Source\Upskill\Movement.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Inc\Upskill\Movement.generated.h
+C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Source\Upskill\Gun.h
 C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Inc\Upskill\Gun.generated.h

@@ -11,6 +11,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
 #include "Materials/Material.h"
+#include "Movement.h"
 #include "Particles/ParticleSystem.h"
 #include "Gun.generated.h"
 
@@ -31,8 +32,11 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	UPROPERTY(BlueprintReadOnly) bool bReloading = false;
 	
 private:
+	UMovement* Player = nullptr;
 	UInputComponent* InputComponent = nullptr;
 	UStaticMeshComponent* Gun = nullptr;
 	UStaticMeshComponent* GunSlide = nullptr;
@@ -46,12 +50,18 @@ private:
 	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = "true")) TSubclassOf<AActor> Bullet;
 
 	void Shoot();
+	void Reload();
 	void SlideAnimation(float DeltaTime);
 	void SlideAnimationEnd(float DeltaTime);
+	void ReloadAnimation(float DeltaTime);
 
 	UArrowComponent* BulletSpawnAnchor = nullptr;
 
 	bool bShooting;
 	UPROPERTY(EditAnywhere) float SlideAnimationInSeconds = 0.1f;
 	float SlideAnimationTimeElapsed = SlideAnimationInSeconds;
+
+	UPROPERTY(EditAnywhere) float ReloadTimeInSeconds = 2.5f;
+	float ReloadTimeElapsed = ReloadTimeInSeconds;
+	
 };

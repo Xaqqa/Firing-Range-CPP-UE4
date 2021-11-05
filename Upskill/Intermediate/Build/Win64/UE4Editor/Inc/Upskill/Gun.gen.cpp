@@ -34,6 +34,11 @@ void EmptyLinkFunctionForGeneratedCodeGun() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bReloading_MetaData[];
+#endif
+		static void NewProp_bReloading_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bReloading;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Bullet_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Bullet;
@@ -41,6 +46,10 @@ void EmptyLinkFunctionForGeneratedCodeGun() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SlideAnimationInSeconds_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SlideAnimationInSeconds;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReloadTimeInSeconds_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReloadTimeInSeconds;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -58,6 +67,17 @@ void EmptyLinkFunctionForGeneratedCodeGun() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGun_Statics::NewProp_bReloading_MetaData[] = {
+		{ "Category", "Gun" },
+		{ "ModuleRelativePath", "Gun.h" },
+	};
+#endif
+	void Z_Construct_UClass_UGun_Statics::NewProp_bReloading_SetBit(void* Obj)
+	{
+		((UGun*)Obj)->bReloading = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGun_Statics::NewProp_bReloading = { "bReloading", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGun), &Z_Construct_UClass_UGun_Statics::NewProp_bReloading_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGun_Statics::NewProp_bReloading_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGun_Statics::NewProp_bReloading_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGun_Statics::NewProp_Bullet_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Gun" },
@@ -72,9 +92,18 @@ void EmptyLinkFunctionForGeneratedCodeGun() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGun_Statics::NewProp_SlideAnimationInSeconds = { "SlideAnimationInSeconds", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGun, SlideAnimationInSeconds), METADATA_PARAMS(Z_Construct_UClass_UGun_Statics::NewProp_SlideAnimationInSeconds_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGun_Statics::NewProp_SlideAnimationInSeconds_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGun_Statics::NewProp_ReloadTimeInSeconds_MetaData[] = {
+		{ "Category", "Gun" },
+		{ "ModuleRelativePath", "Gun.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGun_Statics::NewProp_ReloadTimeInSeconds = { "ReloadTimeInSeconds", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGun, ReloadTimeInSeconds), METADATA_PARAMS(Z_Construct_UClass_UGun_Statics::NewProp_ReloadTimeInSeconds_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGun_Statics::NewProp_ReloadTimeInSeconds_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UGun_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGun_Statics::NewProp_bReloading,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGun_Statics::NewProp_Bullet,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGun_Statics::NewProp_SlideAnimationInSeconds,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGun_Statics::NewProp_ReloadTimeInSeconds,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGun_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UGun>::IsAbstract,
@@ -103,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeGun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGun, 4283160041);
+	IMPLEMENT_CLASS(UGun, 425569812);
 	template<> UPSKILL_API UClass* StaticClass<UGun>()
 	{
 		return UGun::StaticClass();
