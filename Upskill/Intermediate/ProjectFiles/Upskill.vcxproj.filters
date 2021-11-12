@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Upskill.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{547F28E4-9326-49A1-AA99-CCE4032859EA}</UniqueIdentifier>
+      <UniqueIdentifier>{734FFCD3-865B-44E4-BDE6-DE32CEC46751}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Upskill.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{D6709DB4-77C0-4D2C-9834-1542719F58FC}</UniqueIdentifier>
+      <UniqueIdentifier>{00188DC1-5501-4F88-BEDF-06EF2A7A85CC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Upskill">
-      <UniqueIdentifier>{1848CECC-4313-485C-BB18-E173845F9F6D}</UniqueIdentifier>
+      <UniqueIdentifier>{AF072C13-5384-4D41-A457-D9446625FB68}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Upskill\Bullet.cpp">
       <Filter>Source\Upskill</Filter>
@@ -51,30 +51,6 @@
       <Filter>Source\Upskill</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Upskill\MovingTarget.h">
-      <Filter>Source\Upskill</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Upskill\MyCharacter.cpp">
-      <Filter>Source\Upskill</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Upskill\MyCharacter.h">
-      <Filter>Source\Upskill</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Upskill\MyMovingTarget_Forwards.cpp">
-      <Filter>Source\Upskill</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Upskill\MyMovingTarget_Forwards.h">
-      <Filter>Source\Upskill</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Upskill\MyMovingTarget_Sideways.cpp">
-      <Filter>Source\Upskill</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Upskill\MyMovingTarget_Sideways.h">
-      <Filter>Source\Upskill</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Upskill\MyPlayerController.cpp">
-      <Filter>Source\Upskill</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Upskill\MyPlayerController.h">
       <Filter>Source\Upskill</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Upskill\Target.cpp">

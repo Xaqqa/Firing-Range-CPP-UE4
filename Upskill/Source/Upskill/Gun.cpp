@@ -2,6 +2,7 @@
 
 #include "Bullet.h"
 #include "Components/ArrowComponent.h"
+#include "Components/AudioComponent.h"
 #include "Components/InputComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "Components/MeshComponent.h"
@@ -51,6 +52,7 @@ void UGun::BeginPlay()
 	Camera = GetWorld()->GetFirstPlayerController()->GetPawn()->FindComponentByClass<UCameraComponent>();
 	GunshotParticles = GetOwner()->FindComponentByClass<UParticleSystemComponent>();
 	BulletSpawnAnchor = GetOwner()->FindComponentByClass<UArrowComponent>();
+	ReloadSound = GetOwner()->FindComponentByClass<UAudioComponent>();
 
 	GunSlide->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
 	GunSlide->SetStaticMesh(SlideMesh);
@@ -138,6 +140,7 @@ void UGun::Reload()
 	{
 		ReloadTimeElapsed = 0;
 		bReloading = true;
+		ReloadSound->Play();
 	}
 }
 

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Components/ArrowComponent.h"
+#include "Components/AudioComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "Movement.h"
@@ -37,6 +38,7 @@ private:
 	UMovement* Player = nullptr;
 	UArrowComponent* TargetAnchor = nullptr;
 	USphereComponent* SphereCollision = nullptr;
+	UAudioComponent* TargetHit = nullptr;
 
 	bool bActive = true;
 	bool bShot = false;

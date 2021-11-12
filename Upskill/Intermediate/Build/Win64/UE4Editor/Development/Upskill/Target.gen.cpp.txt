@@ -1,14 +1,24 @@
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Definitions.Upskill.h
+E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Definitions.Upskill.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Source\Upskill/Target.h
+E:\Github Repositories\First-CPP-UE4-Project\Upskill\Source\Upskill/Target.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/QuartzSubscription.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerClockHandle.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzSubsystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\QuartzSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzMetronome.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\AudioMixerClockHandle.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerQuantizedCommands.h
+c:\program files\epic games\ue_4.26\engine\source\runtime\audiomixer\public\quartz\AudioMixerClock.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Source\Upskill\Movement.h
+e:\github repositories\first-cpp-ue4-project\upskill\source\upskill\Movement.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
@@ -17,5 +27,5 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Inc\Upskill\Movement.generated.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Inc\Upskill\Target.generated.h
+e:\github repositories\first-cpp-ue4-project\upskill\intermediate\build\win64\ue4editor\inc\upskill\Movement.generated.h
+e:\github repositories\first-cpp-ue4-project\upskill\intermediate\build\win64\ue4editor\inc\upskill\Target.generated.h

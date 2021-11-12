@@ -16,18 +16,18 @@ struct FHitResult;
 #endif
 #define UPSKILL_Target_generated_h
 
-#define Upskill_Source_Upskill_Target_h_17_SPARSE_DATA
-#define Upskill_Source_Upskill_Target_h_17_RPC_WRAPPERS \
+#define Upskill_Source_Upskill_Target_h_18_SPARSE_DATA
+#define Upskill_Source_Upskill_Target_h_18_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define Upskill_Source_Upskill_Target_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Upskill_Source_Upskill_Target_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define Upskill_Source_Upskill_Target_h_17_INCLASS_NO_PURE_DECLS \
+#define Upskill_Source_Upskill_Target_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTarget(); \
 	friend struct Z_Construct_UClass_UTarget_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(UTarget)
 
 
-#define Upskill_Source_Upskill_Target_h_17_INCLASS \
+#define Upskill_Source_Upskill_Target_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUTarget(); \
 	friend struct Z_Construct_UClass_UTarget_Statics; \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(UTarget)
 
 
-#define Upskill_Source_Upskill_Target_h_17_STANDARD_CONSTRUCTORS \
+#define Upskill_Source_Upskill_Target_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UTarget(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UTarget) \
@@ -58,7 +58,7 @@ private: \
 public:
 
 
-#define Upskill_Source_Upskill_Target_h_17_ENHANCED_CONSTRUCTORS \
+#define Upskill_Source_Upskill_Target_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UTarget(UTarget&&); \
@@ -69,32 +69,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTarget); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UTarget)
 
 
-#define Upskill_Source_Upskill_Target_h_17_PRIVATE_PROPERTY_OFFSET \
+#define Upskill_Source_Upskill_Target_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Bullet() { return STRUCT_OFFSET(UTarget, Bullet); } \
 	FORCEINLINE static uint32 __PPO__AnimationTimeInSeconds() { return STRUCT_OFFSET(UTarget, AnimationTimeInSeconds); }
 
 
-#define Upskill_Source_Upskill_Target_h_14_PROLOG
-#define Upskill_Source_Upskill_Target_h_17_GENERATED_BODY_LEGACY \
+#define Upskill_Source_Upskill_Target_h_15_PROLOG
+#define Upskill_Source_Upskill_Target_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Upskill_Source_Upskill_Target_h_17_PRIVATE_PROPERTY_OFFSET \
-	Upskill_Source_Upskill_Target_h_17_SPARSE_DATA \
-	Upskill_Source_Upskill_Target_h_17_RPC_WRAPPERS \
-	Upskill_Source_Upskill_Target_h_17_INCLASS \
-	Upskill_Source_Upskill_Target_h_17_STANDARD_CONSTRUCTORS \
+	Upskill_Source_Upskill_Target_h_18_PRIVATE_PROPERTY_OFFSET \
+	Upskill_Source_Upskill_Target_h_18_SPARSE_DATA \
+	Upskill_Source_Upskill_Target_h_18_RPC_WRAPPERS \
+	Upskill_Source_Upskill_Target_h_18_INCLASS \
+	Upskill_Source_Upskill_Target_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Upskill_Source_Upskill_Target_h_17_GENERATED_BODY \
+#define Upskill_Source_Upskill_Target_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Upskill_Source_Upskill_Target_h_17_PRIVATE_PROPERTY_OFFSET \
-	Upskill_Source_Upskill_Target_h_17_SPARSE_DATA \
-	Upskill_Source_Upskill_Target_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	Upskill_Source_Upskill_Target_h_17_INCLASS_NO_PURE_DECLS \
-	Upskill_Source_Upskill_Target_h_17_ENHANCED_CONSTRUCTORS \
+	Upskill_Source_Upskill_Target_h_18_PRIVATE_PROPERTY_OFFSET \
+	Upskill_Source_Upskill_Target_h_18_SPARSE_DATA \
+	Upskill_Source_Upskill_Target_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	Upskill_Source_Upskill_Target_h_18_INCLASS_NO_PURE_DECLS \
+	Upskill_Source_Upskill_Target_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

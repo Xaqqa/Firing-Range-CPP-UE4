@@ -1,6 +1,16 @@
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Definitions.Upskill.h
+E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Definitions.Upskill.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/QuartzSubscription.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerClockHandle.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzSubsystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\QuartzSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzMetronome.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\AudioMixerClockHandle.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerQuantizedCommands.h
+c:\program files\epic games\ue_4.26\engine\source\runtime\audiomixer\public\quartz\AudioMixerClock.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Source\Upskill\Bullet.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Inc\Upskill\Bullet.generated.h
+c:\program files\epic games\ue_4.26\engine\source\runtime\engine\classes\kismet\KismetMathLibrary.inl
+e:\github repositories\first-cpp-ue4-project\upskill\source\upskill\Bullet.h
+E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Inc\Upskill\Bullet.generated.h

@@ -1,9 +1,9 @@
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Definitions.Upskill.h
+E:\Github Repositories\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Development\Upskill\Definitions.Upskill.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Source\Upskill/UpskillGameModeBase.h
+E:\Github Repositories\First-CPP-UE4-Project\Upskill\Source\Upskill/UpskillGameModeBase.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\w9051114\Documents\GitHub\First-CPP-UE4-Project\Upskill\Intermediate\Build\Win64\UE4Editor\Inc\Upskill\UpskillGameModeBase.generated.h
+e:\github repositories\first-cpp-ue4-project\upskill\intermediate\build\win64\ue4editor\inc\upskill\UpskillGameModeBase.generated.h

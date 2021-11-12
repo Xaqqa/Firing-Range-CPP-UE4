@@ -2,6 +2,7 @@
 
 #include "Components/ActorComponent.h"
 #include "Components/ArrowComponent.h"
+#include "Components/AudioComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "Engine/World.h"
@@ -29,6 +30,7 @@ void UTarget::BeginPlay()
 	Player = Cast<UMovement>(GetWorld()->GetFirstPlayerController()->GetPawn()->FindComponentByClass<UMovement>());
 	SphereCollision = GetOwner()->FindComponentByClass<USphereComponent>();
 	TargetAnchor = GetOwner()->FindComponentByClass<UArrowComponent>();
+	TargetHit = GetOwner()->FindComponentByClass<UAudioComponent>();
 
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &UTarget::OnOverlapBegin);
 }
@@ -79,7 +81,7 @@ void UTarget::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AA
 		AnimationTimeElapsed = 0.f;
 		bShot = true;
 		bActive = false;
-		UE_LOG(LogTemp, Warning, TEXT("HIT TARGET"));
+		TargetHit->Play();
 	}
 }
 

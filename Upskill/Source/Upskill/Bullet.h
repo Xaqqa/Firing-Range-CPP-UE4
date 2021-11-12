@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Components/AudioComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/Actor.h"
 #include "Bullet.generated.h"
@@ -29,6 +30,7 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere) float BulletInitialVelocity = 100.f;
+	UAudioComponent* Shot = nullptr;
 	
 	
 };

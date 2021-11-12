@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Components/ActorComponent.h"
+#include "Components/AudioComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "Engine/World.h"
@@ -16,6 +17,7 @@ UBullet::UBullet()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
+
 	// ...
 }
 
@@ -27,6 +29,8 @@ void UBullet::BeginPlay()
 
 	UStaticMeshComponent* BulletMesh = GetOwner()->FindComponentByClass<UStaticMeshComponent>();
 	BulletMesh->AddImpulse(UKismetMathLibrary::GetForwardVector(BulletMesh->GetRelativeRotation())*BulletInitialVelocity);
+	Shot = GetOwner()->FindComponentByClass<UAudioComponent>();
+	Shot->Play(0);
 }
 
 

@@ -7,6 +7,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Components/ArrowComponent.h"
+#include "Components/AudioComponent.h"
 #include "Components/InputComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
@@ -42,6 +43,7 @@ private:
 	UStaticMeshComponent* GunSlide = nullptr;
 	UArrowComponent* SlideEndAnchor = nullptr;
 	UCameraComponent* Camera = nullptr;
+	UAudioComponent* ReloadSound = nullptr;
 
 	UStaticMesh* SlideMesh = nullptr;
 	UMaterial* SlideMaterial = nullptr;
