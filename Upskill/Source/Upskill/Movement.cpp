@@ -72,6 +72,7 @@ void UMovement::BeginPlay()
 		if (MainHUD)
 		{
 			MainHUD->AddToViewport();
+
 			UE_LOG(LogTemp, Warning, TEXT("HUD ADDED TO VIEWPORT"));
 		}
 	}
@@ -159,6 +160,8 @@ void UMovement::AimOut(float DeltaTime)
 void UMovement::AddPoints(int32 PointsToAdd)
 {
 	Points += PointsToAdd;
+	UFunction* CheckPoints = MainHUD->GetClass()->FindFunctionByName(FName("CheckForWin"));
+	MainHUD->ProcessEvent(CheckPoints, NULL);
 }
 
 void UMovement::SetAmmo(int32 AmmoToChange, bool RemoveAmmo)
